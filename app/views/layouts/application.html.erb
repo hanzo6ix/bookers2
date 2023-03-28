@@ -9,6 +9,7 @@
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/2cbfba0bf5.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="d-flex flex-column vh-100">
@@ -24,7 +25,7 @@
             <ul class="navbar-nav ml-auto">
               <% if user_signed_in? %>
                 <li>
-                  <%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light' %>
+                  <%= link_to "Home", user_path(current_user.id), class:'nav-link text-light' %>
                 </li>
                 <li>
                   <%= link_to "Users", users_path, class: 'nav-link text-light' %>
